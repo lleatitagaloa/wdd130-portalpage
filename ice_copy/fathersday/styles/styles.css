@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffb347, #8b4513);
+    color: #fff8f0;
+    line-height: 1.6;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(60, 25, 5, 0.85);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 15px;  
+    overflow: hidden;
+}
+
+nav {
+    background-color: #5c2c06;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    color: #ffd27f;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    height: auto;
+    grid-column: 1 / -1;
+}
+
+main h1 {
+    position: absolute;
+    top: 6%;
+    right: 12%;
+    width: 26%;
+    color: rgba(255,255,255,0.7);
+    font-family: "Imperial Script", cursive;
+    font-size: 6rem;
+    line-height: 0.9;
+    text-align: center;
+    z-index: 5;
+    grid-column: 1 / -1;
+}
+
+section {
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 80px;
+    padding: 25px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+section:nth-of-type(1) {
+    background: linear-gradient(135deg, #ffb347, #ff7b00);
+    color: #3d1b00;
+}
+
+section:nth-of-type(2) {
+    background: linear-gradient(135deg, #c96b2c, #7a3b00);
+    color: white;
+}
+
+section:nth-of-type(3) {
+    background: linear-gradient(135deg, #ff914d, #5c2c06);
+    color: white;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+section:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    background: linear-gradient(to right, #3d1b00, #8b4513);
+    color: rgba(255, 248, 240, 0.85);
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-top: 3px solid rgba(255, 179, 71, 0.5);
+    box-shadow: inset 0 5px 15px rgba(255,255,255,0.05);
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        right: auto;
+        left: 5%;
+        width: 90%;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #E8ECED;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            
+            border: 4px solid black;
+            border-radius: 30px;
+            overflow: hidden;
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .first-pres {
+            position: absolute; /* places the grid on top of the image */
+            top: 20px; /* moves it downward */
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+            row-gap: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .title {
+            grid-area: 1 / 2 / 2 / 6;
+            text-align: center;
+            color: white;
+        }
+
+        .title h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .apostles {
+            position: absolute;
+            top: 210px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 18px;
+            column-gap: 15px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .sub-title {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .sub-title h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+        }
+        
+        .oaks-img {
+            width: 110px;
+            height: 110px;
+        }
+
+        .oaks {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+
+        .first-pres img {
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+        }
+
+        .eyring img, .christofferson img  {
+            width: 90px;
+            height: 90px;
+        }
+
+        .eyring {
+            grid-area: 2 / 1 / 3 / 3;
+        } 
+        
+        .christofferson {
+            grid-area: 2 / 5 / 3 / 7;
+        }
+
+        .apostles img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        /* for creativity added hover effect and links to each general authority's profile on church website */
+        img:hover {
+            opacity: .6;
+            transform: scale(1.4);
+            border-color: midnightblue;
+        }
+
+        /* smoother hover effect */
+        img {
+            transition: transform .3s, opacity .3s;
+            }
+
+    </style>
+</head>
+<body>
+    <section class="card">
+        <section class="first-pres">
+            <section class="title">
+                <h1>First Presidency</h1>
+            </section>
+            <section class="eyring">
+                <a href="https://www.churchofjesuschrist.org/learn/people/henry-b-eyring/life-leadership?lang=eng" target="_blank">
+                <img class="eyring-img" src="images/eyring.webp" alt="Henry B. Eyring">
+                </a>
+            </section>
+            <section class="oaks">
+                <a href="https://www.churchofjesuschrist.org/learn/people/dallin-h-oaks/life-leadership?lang=eng" target="_blank">
+                <img class="oaks-img" src="images/oaks.webp" alt="Dallin H. Oaks">
+                </a>
+            </section>
+            <section class="christofferson">
+                <a href="https://www.churchofjesuschrist.org/learn/people/d-todd-christofferson/life-leadership?lang=eng" target="_blank">
+                <img class="chrisofferson" src="images/christofferson.webp" alt="D. Todd Christofferson">
+                </a>
+            </section>
+        </section>
+        <section class="apostles">
+            <section class="sub-title">
+                <h2>Quorum of the Twelve Apostles</h2>
+            </section>
+            <section class="uchtdorf">
+                <a href="https://www.churchofjesuschrist.org/learn/dieter-f-uchtdorf?lang=eng" target="_blank">
+                <img class="uchtdorf-img" src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+                </a>
+            </section>
+            <section class="bednar">
+                <a href="https://www.churchofjesuschrist.org/learn/david-a-bednar?lang=eng" target="_blank">
+                <img class="bednar-img" src="images/bednar.webp" alt="David A. Bednar">
+                </a>
+            </section>
+            <section class="cook">
+                <a href="https://www.churchofjesuschrist.org/learn/quentin-l-cook?lang=eng" target="_blank">
+                <img class="cook-img" src="images/cook.webp" alt="Quentin L. Cook">
+                </a>
+            </section>
+            <section class="andersen">
+                <a href="https://www.churchofjesuschrist.org/learn/neil-l-andersen?lang=eng" target="_blank">
+                <img class="andersen-img" src="images/anderson.webp" alt="Neil L. Andersen">
+                </a>
+            </section>
+            <section class="rasband">
+                <a href="https://www.churchofjesuschrist.org/learn/ronald-a-rasband?lang=eng" target="_blank">
+                <img class="rasband-img" src="images/rasband.webp" alt="Ronald A. Rasband">
+                </a>
+            </section>
+            <section class="stevenson">
+                <a href="https://www.churchofjesuschrist.org/learn/gary-e-stevenson?lang=eng" target="_blank">
+                <img class="stevenson-img" src="images/stevenson.webp" alt="Gary E. Stevenson">
+                </a>
+            </section>
+            <section class="renlund">
+                <a href="https://www.churchofjesuschrist.org/learn/dale-g-renlund?lang=eng" target="_blank">
+                <img class="renlund-img" src="images/renlund.webp" alt="Dale G. Renlund">
+                </a>
+            </section>
+            <section class="gong">
+                <a href="https://www.churchofjesuschrist.org/learn/gerrit-w-gong?lang=eng" target="_blank">
+                <img class="gong-img" src="images/gong.webp" alt="Gerrit W. Gong">
+                </a>
+            </section>
+            <section class="soares">
+                <a href="https://www.churchofjesuschrist.org/learn/ulisses-soares?lang=eng" target="_blank">
+                <img class="soares-img" src="images/soares.webp" alt="Ulisses Soares">
+                </a>
+            </section>
+            <section class="kearon">
+                <a href="https://www.churchofjesuschrist.org/learn/patrick-kearon?lang=eng" target="_blank">
+                <img class="kearon-img" src="images/kearon.webp" alt="Patrick Kearon">
+                </a>
+            </section>
+            <section class="causse">
+                <a href="https://www.churchofjesuschrist.org/learn/gerald-j-causse?lang=eng" target="_blank">
+                <img class="causse-img" src="images/causse.webp" alt="Gerald Causse">
+                </a>
+            </section>
+            <section class="gilbert">
+                <a href="https://www.churchofjesuschrist.org/learn/clark-g-gilbert?lang=eng" target="_blank">
+                <img class="gilbert-img" src="images/gilbert.webp" alt="Clark G. Gilbert">
+                </a>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
+
+
+
+
